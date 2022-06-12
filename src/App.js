@@ -1,11 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
+import CampsitesList from './components/CampsitesList';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      Hello Nucamp!
+      <Header />
+      <CampsitesList />
+      <Footer />
     </div>
   );
 }
