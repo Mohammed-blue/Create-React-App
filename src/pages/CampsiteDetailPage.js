@@ -6,7 +6,7 @@ import CommentsList from '../features/comments/CommentsList';
 import SubHeader from '../components/SubHeader';
 
 const CampsiteDetailPage = () =>{
-    const { campsiteId } =useParams();
+    const { campsiteId } = useParams();
     const campsite = selectCampsiteById(campsiteId);
 
     return (

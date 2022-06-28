@@ -1,4 +1,4 @@
-import { Row, Col } from 'reactstrap';
+import { Col } from 'reactstrap';
 import Partner from './Partner';
 import { selectAllPartners } from './partnersSlice';
 
@@ -7,7 +7,6 @@ const PartnersList = () => {
 
     return (
         <Col className='mt-4'>
-            <Row>
                 {partners.map((partner) => {
                     return (
                         <div className='d-flex mb-5' key={partner.id}>
@@ -15,7 +14,6 @@ const PartnersList = () => {
                         </div>
                     )
                 })}
-            </Row>
         </Col>
     )
 }
